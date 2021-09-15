@@ -14,10 +14,12 @@ export default function Login() {
                </div>
                <div className="loginRight">
                    <div className="loginBox">
-                       <input 
+                       <input
+                       type='email'
                        placeholder="Email or Phone Number" 
                        className="loginInput" />
-                       <input 
+                       <input
+                       type='password'
                        placeholder="Password" 
                        className="loginInput" />
                        <button 
