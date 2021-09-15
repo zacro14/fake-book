@@ -1,0 +1,52 @@
+.birthdayWrapper{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 3px -1px rgba(188,192,196,0.53); 
+    box-shadow: 0px 2px 3px -1px rgba(188,192,196,0.53);
+    margin-bottom: 15px;   
+}
+
+.birthdayContainer{
+    padding: 10px;   
+    align-content: center;
+}
+.birthDayImg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.birthdayText{
+    font-weight: 300;
+    font-size: 15px;
+    color: #66686C;
+    
+}
+.birthdayContent{
+    display: flex;
+}
+.birthdayNameText{   
+    font-weight: 300;
+    font-size: 15px;
+    align-content:center;
+    justify-content: left;
+}
+.birthdayTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.birthdayTopLeft{
+    display: flex;
+    align-items: center;
+}
+.buttonName{
+    color: #5B5B5B;
+    background-color: #FFFFFF;
+    border: none;    
+    border-radius: 5px;
+    width: 100%;;
+}
+.buttonName:hover{
+    background-color: #F0F2F5;
+    cursor: pointer;
+}
