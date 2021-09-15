@@ -7,7 +7,7 @@ import OnlineUsers from '../online/OnlineUsers';
 
 
 
-export default function Rightbar({profile}) { 
+export default function Rightbar({ profile }) { 
     const HomeRightBar = () =>{
 
         return(
@@ -90,16 +90,15 @@ export default function Rightbar({profile}) {
                                 className="ProfilefollowingImg" />
                                 <span className="profileFollowingUsername">Danmar Guiruela</span>
                             </div>
-                        </div>             
+                        </div>                       
+                        <AdsContainer/>            
             </>
         )
     }
     return (
         <div className='rightBar'>
             <div className="rightBarWrapper"> 
-                        <ProfileRightBar/>
-                        <AdsContainer/>
-                                
+                        { profile ? <ProfileRightBar/>:<HomeRightBar/> }                              
             </div>
         </div> 
        
