@@ -1,16 +1,29 @@
 import { Avatar, IconButton } from '@material-ui/core'
 import MoreHoriz from '@material-ui/icons/MoreHoriz';
 import './post.css'
+import { Users } from '../../dummyData'
+import { useState } from 'react';
 
-export default function Post() {
+export default function Post({post}) {
+ const [like, setLike ] = useState(post.like)
+ const [isLiked, setisLiked ] = useState(false)
+
+ const likeHandler =() =>{
+setLike(isLiked ? like-1 : like + 1)
+setisLiked(!isLiked)
+ }
     return (
         <div className='post'>
             <div className="postWrapper">
                 <div className="postTop">
                     <div className="postTopLeft">              
-                            <Avatar src ='/assets/person/janssen.png' alt ='img'/>                     
-                        <span className="postUserName">Janssen Peñaredondo</span>
-                        <span className="postDate">1m</span>
+                            <Avatar 
+                            src = {Users.filter((u) => u.id===post.userId)[0].profilePicture } 
+                            alt ='img'/>                     
+                        <span className="postUserName">
+                            {Users.filter((u) => u.id===post.userId)[0].username }
+                        </span>
+                        <span className="postDate">{post.date}</span>
                     </div>
                     <div className="postTopRight">
                         <IconButton>
@@ -20,19 +33,19 @@ export default function Post() {
                 </div>
                 <div className="postCenter">
                     <span className="postText">
-                        Hey you
+                        {post?.desc}
                     </span>
-                    <img className='postImg' src="/assets/post/10.jpeg" alt="post" />
+                    <img className='postImg' src={post.photo} alt="post" />
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img className='likeIcon' src="/assets/emote/like_fakebook.png" alt="like" />
-                        <img className='likeIcon' src="/assets/emote/heart_fakebook.png" alt="heart" />
-                        <img className='likeIcon' src="/assets/emote/care_fakebook.png" alt="heart" />
-                        <span className='postLikeCounter'>100K</span>
+                        <img className='likeIcon' src="/assets/emote/like.svg" onClick ={likeHandler} alt="like" />
+                        <img className='likeIcon' src="/assets/emote/love.svg" onClick ={likeHandler} alt="heart" />
+                        <img className='likeIcon' src="/assets/emote/care.svg" onClick ={likeHandler} alt="heart" />
+                        <span className='postLikeCounter'>{like}</span>
                     </div>
                     <div className="postBottomRight">
-                    <span className="postcommentText">20 Comments</span>
+                    <span className="postcommentText">{post.comment} Comments</span>
                     <span className="postshareText">10 Shares</span>
                     </div>               
                 </div>
