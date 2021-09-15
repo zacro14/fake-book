@@ -1,0 +1,108 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #F0F2F5;
+    align-items: center;
+    justify-content: center;
+
+}
+.loginWrapper{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+.loginLeft,.loginRight{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginLogo{
+    font-weight: 800;
+    color: #166FE5;
+    margin-bottom: 10px;
+}
+
+.loginDesc{
+font-size: 15px;
+}
+.loginBox{
+    display: flex;
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+    background-color: #ffff;
+    justify-content:space-between;
+    flex-direction: column;  
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);;
+}
+.loginInput{
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 1px #DDDFE2;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.loginInput:focus{
+    border-color: #1876F0;
+    outline: none;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2;
+}
+.loginButton{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.loginForgot{
+    text-align: center;
+    margin-top: 16px;
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loginForgot:hover{
+    text-decoration: underline;
+}
+.loginForgot:focus{
+    outline: none !important;
+}
+.loginForgot:focus-visible{
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+
+.loginSeparator{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.loginRegisterButton{
+    background-color: #36A420;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    width: 60%;
+    align-self: center ;
+}
+
