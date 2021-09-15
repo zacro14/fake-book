@@ -27,15 +27,7 @@
 .shareInput:focus{
     outline: none;
 }
-.shareHr{
-    margin-left: 1px;
-    margin-right: 1px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
 
-    background-color: #BCC0C4;
-
-}
 .shareWrapper{
     padding: 20px;
 }
@@ -43,18 +35,15 @@
 .shareBottom{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.shareOptions{
-    display: flex;
-    margin-left: 20px;
-}
-.shareOption{
-    display: flex;
+  
+.shareOption{ 
+    display: flex;  
     align-items: center;
-    margin-right: 15px;
     cursor: pointer;
 }
+
 .shareIcon{
     font-size: 18px;
     margin-right: 4px;
@@ -63,4 +52,11 @@
     font-size: 14px;
     font-weight: 500;
     color: #606770;
+}
+
+.separatorShare{
+    border-bottom: 1px solid #ced0d4;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
