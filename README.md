@@ -1,3 +1,12 @@
+Hi this  project was come from  Lama Dev from Youtube 
+I create this  social app to  Knew  if I Learn from him and I developing this to become like a facebook
+with out depending on  him to much.
+
+I am new to Front End Development using React and trying to learn new things from him and from Internet 
+Hoping someday someone can recognize my work.
+
+thank you..
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
