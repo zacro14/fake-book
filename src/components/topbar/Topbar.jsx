@@ -1,10 +1,9 @@
 import './topbar.css';
-import { SearchRounded, ChatBubbleRounded, NotificationsRounded, PersonRounded,  } from '@material-ui/icons';
-import { Avatar, Badge, IconButton , Chip , Button } from '@material-ui/core';
+import { SearchRounded, PersonOutlineRounded, ChatBubbleOutlineRounded, NotificationsOutlined,  } from '@material-ui/icons';
+import { Avatar, Badge, IconButton  , Button } from '@material-ui/core';
 
 
-
-
+ 
 
 export default function Topbar() {
   
@@ -31,7 +30,7 @@ export default function Topbar() {
                     <div className="topbarIconItem">
                     <IconButton>  
                         <Badge badgeContent={5} color="secondary" >
-                            <PersonRounded />
+                            <PersonOutlineRounded />
                         </Badge>
                     </IconButton>
                         {/*<span className="topbarBadge">2</span>*/}
@@ -39,7 +38,7 @@ export default function Topbar() {
                     <div className="topbarIconItem">
                             <IconButton className='topbarIcon' >
                                  <Badge badgeContent={2} color="secondary" >
-                                     <ChatBubbleRounded /> 
+                                     <ChatBubbleOutlineRounded /> 
                                 </Badge> 
                             </IconButton>   
                         {/*<span className="topbarBadge">2</span>*/}
@@ -47,20 +46,15 @@ export default function Topbar() {
                     <div className="topbarIconItem">
                         <IconButton >
                             <Badge  badgeContent={13} color="secondary" >  
-                                <NotificationsRounded />
+                                <NotificationsOutlined />
                             </Badge> 
                         </IconButton>
                         {/*<span className="topbarBadge">2</span>*/} 
                     </div>
                 </div>
-                    <Chip className ='topbarAvatar' 
-                    avatar ={<Avatar 
+                   <Avatar 
                     src ='/assets/person/janssen.png' 
-                    alt ='image' />} 
-                    clickable = 'true' 
-                    label='Janssen'
-                    variant='outlined' />                  
-                    {/*<img src='/assets/person/janssen.png' alt ='img' className="topbarImg" /> */}  
+                    alt ='image' />
             </div> 
         </div>
     )
