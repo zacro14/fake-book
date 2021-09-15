@@ -46,7 +46,7 @@ setisLiked(!isLiked)
                     </div>
                     <div className="postBottomRight">
                     <span className="postcommentText">{post.comment} Comments</span>
-                    <span className="postshareText">10 Shares</span>
+                    <span className="postshareText">{post?.share} Shares</span>
                     </div>               
                 </div>
             </div> 
