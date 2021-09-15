@@ -8,7 +8,7 @@ export default function CloseFriend({user}) {
         variant='dot' 
         src={user.profilePicture}
          alt='img'/> 
-        <span className='sidebarFrienName'>{user.username}</span>
+        <span className='sidebarFriendName'>{user.username}</span>
     </li>
     )
 }
