@@ -100,7 +100,6 @@ export default function Rightbar({ profile }) {
             <div className="rightBarWrapper"> 
                         { profile ? <ProfileRightBar/>:<HomeRightBar/> }                              
             </div>
-        </div> 
-       
+        </div>        
     )
 }
